@@ -18,6 +18,14 @@
   --color-dark-walnut: #3d2d1f;
   --color-honey: #c9924a;
   --color-terracotta: #9d5538;
+
+  /* Warm shadows — walnut tint, never pure black */
+  --shadow-warm:
+    0 2px 8px color-mix(in srgb, var(--color-walnut) 6%, transparent),
+    0 8px 28px color-mix(in srgb, var(--color-walnut) 10%, transparent);
+  --shadow-warm-lg:
+    0 4px 12px color-mix(in srgb, var(--color-walnut) 8%, transparent),
+    0 16px 48px color-mix(in srgb, var(--color-walnut) 12%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
