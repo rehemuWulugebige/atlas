@@ -10,6 +10,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Brand palette */
+  --color-bone: #f7f2e8;
+  --color-cream: #ede4d1;
+  --color-walnut: #6b5947;
+  --color-dark-walnut: #3d2d1f;
+  --color-honey: #c9924a;
+  --color-terracotta: #9d5538;
 }
 
 @media (prefers-color-scheme: dark) {
