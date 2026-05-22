@@ -1,0 +1,18 @@
+---
+description: Atlas project conventions
+alwaysApply: true
+---
+
+Before any task, read `AGENTS.md` at the project root. Follow every convention specified there — color tokens, font tokens, folder structure, naming conventions, and atomic execution rules.
+
+Key non-negotiables:
+
+- Never use inline hex values; pull from `--color-*` tokens in globals.css
+- Server Components by default; only add `"use client"` at interactive leaves
+- Co-locate code with its feature; never extract to `components/shared/` until used in 2+ places
+- For any task touching more than 2 files, propose a plan first
+- After completing a task, STOP — wait for explicit confirmation before next steps
+- Use `pnpm`, not `npm`
+- TypeScript strict, kebab-case filenames, `@/*` import alias only
+
+When in doubt, defer to `AGENTS.md`. If a task seems ambiguous, ask before guessing.
