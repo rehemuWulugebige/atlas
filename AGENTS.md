@@ -68,14 +68,12 @@ Don't pre-create empty folders. Co-locate code with its feature until something 
 
 **Color tokens** (defined in `globals.css` via `@theme`):
 
-- `--color-cream: #FAF5EB` (base background)
-- `--color-cream-warm: #F2E9D8` (secondary surface)
-- `--color-terracotta: #A0522D` (primary accent)
-- `--color-terracotta-deep: #7A3B1F` (hover state)
-- `--color-brown: #2D1B0F` (body text)
-- `--color-brown-soft: #5A4434` (secondary text)
-- `--color-gold: #C9A961` (decorative accent)
-- `--color-teal: #2F4F4F` (rare secondary)
+- `--color-bone: #F7F2E8` (primary background — clean warm white, lets food breathe)
+- `--color-cream: #EDE4D1` (secondary surfaces, cards, dividers)
+- `--color-walnut: #6B5947` (body text, secondary headings, soft contrast)
+- `--color-dark-walnut: #3D2D1F` (display headings, primary text, max contrast)
+- `--color-honey: #C9924A` (primary accent — buttons, links, etles motif)
+- `--color-terracotta: #9D5538` (rare accent — special moments only, not a workhorse)
 
 **Typography**:
 
@@ -92,6 +90,13 @@ Don't pre-create empty folders. Co-locate code with its feature until something 
 - Text shadows on body type
 - Pure black shadows
 - Generic "Central Asian pattern" overlays — only specifically Uyghur etles motifs (bodom/almond shapes), used as ornaments only
+
+**Photography**:
+
+- Phase 1A (now): use mom's existing food photos as-is for the build. They're informal but functional.
+- Phase 1B (later, before public launch): re-shoot a hero set of 6-8 items with diffused natural light, warm-toned backgrounds (craft paper, wood board, linen), and varied angles (mix 45° and overhead). Same iPhone, different staging.
+- No human faces or identifiable people in any photo, ever. Food and hands-free shots only.
+- Photo treatment in UI: subtle warm-tinted shadow under each image (derived from `--color-walnut` at low opacity), no filters, no aggressive cropping.
 
 **Etles ornament — where it goes**:
 
@@ -112,6 +117,7 @@ Don't pre-create empty folders. Co-locate code with its feature until something 
 - Menu items as a typed TypeScript array in `src/features/menu/data.ts`
 - No database, no auth, no admin
 - Deployed to Vercel with custom domain
+- Open product questions to resolve before launch: (a) confirm whether the chocolate bundt's glaze contains dairy/cream — if yes, that item is not cottage-food-eligible and stays off the public menu; (b) decide whether dumplings/manti (savory) appear on the site at all, and if so, in a separate "savory" section.
 
 ## Out of scope (do NOT pre-build)
 
