@@ -89,7 +89,7 @@ export default function Home() {
           atlas
         </a>
         <nav className="font-body text-walnut flex gap-6 text-sm">
-          <a href="#menu" className="hover:text-dark-walnut">
+          <a href="/menu" className="hover:text-dark-walnut">
             Menu
           </a>
           <a href="#story" className="hover:text-dark-walnut">
@@ -113,7 +113,7 @@ export default function Home() {
               Handmade each week in a Fairfax kitchen. Pickup only — order by message.
             </p>
             <a
-              href="#menu"
+              href="/menu"
               className="bg-honey font-body text-bone mt-8 inline-block rounded-full px-8 py-3 text-sm font-medium shadow-sm transition-shadow hover:shadow-md"
             >
               see this week's menu
