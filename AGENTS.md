@@ -64,7 +64,33 @@ Don't pre-create empty folders. Co-locate code with its feature until something 
 
 ## Design language
 
-**Direction**: editorial heritage. Warm cream paper background, deep brown body text, terracotta and gold as accents. Inspired by cookbook and food magazine spreads. Photography is the visual centerpiece; the design is the frame around it.
+**Direction**: modern interactive editorial. Combines editorial heritage typography (Fraunces, warm palette, considered spacing) with selective interactive 3D moments and refined motion. The site reads as a considered editorial brand but features one or two distinctive interactive elements — a signature 3D walnut on the hero, refined motion on scroll and hover — that create memorable presence. Photography becomes a major visual element when available; until then, typography and the 3D walnut carry the visual weight.
+
+**Visual effects — what's allowed and where**:
+
+- 3D elements: ONE signature 3D moment on the homepage (rotating walnut in hero). Built with Spline and embedded as a client component via dynamic import so the rest of the page stays server-rendered.
+- Subtle motion: scroll-triggered fade-ins on sections, smooth transitions on cards and buttons (translate + shadow), slow rotation on the walnut and on ornamental elements.
+- Gradients: allowed inside the 3D scene's lighting and material. Not as full-page or full-section backgrounds.
+- Glassmorphism: allowed subtly on the sticky nav (backdrop-filter blur). Allowed on overlay UI (modals, dropdowns) when added later. Not used decoratively on cards.
+- Walnut-tinted shadows on UI elements stay. Layered shadows preferred over single shadows.
+
+**Visual effects — still avoided**:
+
+- Pure black anywhere — always walnut-tinted
+- Text shadows on body type
+- Generic "Central Asian pattern" overlays — bodom motif only
+- Particle systems, animated gradient backgrounds, marquee scrollers, or other generic "AI landing page" effects. The signature 3D walnut is our one indulgence; the rest of the page stays editorial and restrained.
+
+## 3D element handling
+
+The Atlas homepage features a signature rotating walnut as the hero centerpiece. Implementation rules:
+
+- Built and exported from Spline (`spline.design`); embedded via the `@splinetool/react-spline` package
+- The Spline canvas is a Client Component (requires browser APIs); load with `next/dynamic` and `ssr: false` to keep surrounding code Server Components
+- Show a bone-colored loading placeholder (optional bodom motif overlaid) while the scene loads
+- Position: hero right column, replacing the current photo placeholder
+- Animation: slow rotation (30s+ per full revolution). The walnut reads as "alive," not "animated"
+- Performance budget: scene should target under 2MB total. If it grows beyond that, migrate to React Three Fiber with an optimized GLB model
 
 **Color tokens** (defined in `globals.css` via `@theme`):
 
@@ -82,14 +108,6 @@ Don't pre-create empty folders. Co-locate code with its feature until something 
 - Do not use Inter, Roboto, or other generic AI-default sans fonts
 
 **Shadows**: warm-tinted only, never pure black. Derive from `--color-brown` at low opacity (~8%). Prefer layered shadows over single shadows.
-
-**Effects to avoid**:
-
-- Gradients (except inside placeholder photo zones during Phase 1)
-- Glassmorphism / heavy backdrop-filter blur (subtle use on sticky header only)
-- Text shadows on body type
-- Pure black shadows
-- Generic "Central Asian pattern" overlays — only specifically Uyghur etles motifs (bodom/almond shapes), used as ornaments only
 
 **Photography**:
 
