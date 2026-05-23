@@ -5,8 +5,7 @@ import { menuItems } from "@/features/menu/data";
 
 export const metadata: Metadata = {
   title: "Menu — Atlas",
-  description:
-    "This week's handmade Uyghur desserts available for pickup in Fairfax, Virginia.",
+  description: "This week's handmade Uyghur desserts available for pickup in Fairfax, Virginia.",
 };
 
 export default function MenuPage() {
