@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { Bodom } from "@/components/decorative/bodom";
-
 const FAQ_ITEMS = [
   {
     question: "How do I order?",
@@ -120,10 +118,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex justify-center py-8">
-        <Bodom className="text-honey/60 h-6 w-4" />
-      </div>
-
       {/* Intro */}
       <section id="story" className="scroll-mt-28 px-6 py-20 md:py-28">
         <p className="font-body text-dark-walnut mx-auto max-w-2xl text-center text-lg leading-relaxed md:text-xl">
@@ -131,10 +125,6 @@ export default function Home() {
           <em className="italic">Same recipes our family brought from Urumqi.</em>
         </p>
       </section>
-
-      <div className="flex justify-center py-8">
-        <Bodom className="text-honey/60 h-6 w-4" />
-      </div>
 
       {/* CTA Strip */}
       <section id="order" className="bg-cream scroll-mt-28 px-6 py-12 text-center md:py-16">
