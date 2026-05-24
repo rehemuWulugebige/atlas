@@ -5,7 +5,7 @@ import { useState } from "react";
 import type { MenuItem } from "@/features/menu/types";
 
 const GLASS_PILL =
-  "border-cream/40 bg-bone/65 shadow-glass-pill rounded-full border backdrop-blur-md";
+  "border-walnut/15 bg-bone/65 shadow-glass-pill rounded-full border backdrop-blur-md";
 
 type MenuCardDetailsProps = {
   item: MenuItem;

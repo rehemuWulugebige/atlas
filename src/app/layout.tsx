@@ -3,9 +3,9 @@ import { display, manrope } from "@/styles/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Atlas — Handmade Uyghur Desserts",
+  title: "Darya — Handmade Uyghur Desserts",
   description:
-    "Handmade Uyghur desserts from a home kitchen in Fairfax, Virginia. Walnut halwa, honey baklava, sangza, and rose-water cake — pickup only, order by message.",
+    "Handmade Uyghur desserts from a home kitchen in Fairfax, Virginia. Weekly menu, pickup only — order by message.",
 };
 
 export default function RootLayout({

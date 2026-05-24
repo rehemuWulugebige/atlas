@@ -21,7 +21,7 @@ const FAQ_ITEMS = [
   {
     question: "What's on the menu?",
     answer:
-      "A rotating weekly selection of Uyghur desserts — walnut halwa, honey baklava, sangza, rose-water cake, and others. The menu updates every Sunday. Check Instagram or the menu section above.",
+      "A rotating weekly selection of Uyghur desserts. The menu updates every Sunday — see the menu page or message us on Instagram.",
   },
   {
     question: "Do you note ingredients and allergens?",
@@ -91,7 +91,7 @@ export default function Home() {
       <section className="relative min-h-[88vh] w-full overflow-hidden">
         <Image
           src="/images/home/IMG_2451.jpg"
-          alt="Handmade desserts from Atlas"
+          alt="Handmade desserts from Darya"
           fill
           className="object-cover object-center brightness-105"
           sizes="100vw"
@@ -104,15 +104,15 @@ export default function Home() {
         <div className="relative z-10 flex min-h-[88vh] flex-col justify-center px-6 pt-28 pb-16 md:items-start md:px-12 md:pt-32 md:pb-24 lg:px-24">
           <div className="max-w-xl text-center md:max-w-2xl md:text-left">
             <h1 className="font-display text-dark-walnut [text-shadow:0_1px_24px_color-mix(in_srgb,var(--color-bone)_85%,transparent)] text-4xl leading-[1.1] font-normal tracking-tight md:text-5xl lg:text-6xl">
-              Recipes from the city{" "}
-              <em className="font-normal italic">farthest from any ocean.</em>
+              Recipes from the city farthest from any ocean.
             </h1>
             <p className="font-body text-walnut mt-6 max-w-md text-lg leading-relaxed md:mx-0 mx-auto">
-              Uyghur desserts, handmade each week in Fairfax. Pickup only — order by message.
+              Uyghur desserts from Darya, handmade each week in Fairfax. Pickup only — order by
+              message.
             </p>
             <a
               href="/menu"
-              className="bg-honey font-body text-bone mt-8 inline-block rounded-full px-8 py-3 text-sm font-medium shadow-sm transition-shadow hover:shadow-md"
+              className="bg-honey font-body text-dark-walnut shadow-warm hover:shadow-warm-lg mt-8 inline-block rounded-full px-8 py-3 text-sm font-medium transition-shadow"
             >
               see this week&apos;s menu
             </a>
@@ -125,7 +125,7 @@ export default function Home() {
       </div>
 
       {/* Intro */}
-      <section className="px-6 py-20 md:py-28">
+      <section id="story" className="scroll-mt-28 px-6 py-20 md:py-28">
         <p className="font-body text-dark-walnut mx-auto max-w-2xl text-center text-lg leading-relaxed md:text-xl">
           Made by hand the week of pickup.{" "}
           <em className="italic">Same recipes our family brought from Urumqi.</em>
@@ -137,13 +137,13 @@ export default function Home() {
       </div>
 
       {/* CTA Strip */}
-      <section className="bg-cream px-6 py-12 text-center md:py-16">
+      <section id="order" className="bg-cream scroll-mt-28 px-6 py-12 text-center md:py-16">
         <p className="font-body text-walnut">
           ordering is by message — pickup in Fairfax · weekly menu
         </p>
         <a
           href="#order"
-          className="bg-honey font-body text-bone mt-6 inline-block rounded-full px-8 py-3 text-sm font-medium shadow-sm transition-shadow hover:shadow-md"
+          className="bg-honey font-body text-dark-walnut shadow-warm hover:shadow-warm-lg mt-6 inline-block rounded-full px-8 py-3 text-sm font-medium transition-shadow"
         >
           see how to order
         </a>

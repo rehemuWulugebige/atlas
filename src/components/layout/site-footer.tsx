@@ -7,15 +7,17 @@ export function SiteFooter() {
         <div>
           <span className="font-display text-dark-walnut inline-flex items-center text-lg">
             <Bodom className="text-honey mr-2 inline-block h-3 w-2" />
-            atlas
+            Darya
           </span>
-          <p className="font-body text-walnut mt-1 text-sm">handmade Uyghur desserts</p>
+          <p className="font-body text-walnut mt-1 text-sm">
+            handmade Uyghur desserts · Fairfax, Virginia
+          </p>
         </div>
         <p className="font-body text-walnut text-xs leading-relaxed md:max-w-xs md:text-center">
           NOT FOR RESALE — PROCESSED AND PREPARED WITHOUT STATE INSPECTION
         </p>
         <div className="font-body text-walnut text-sm">
-          <p>DM @atlas-handle</p>
+          <p>DM @darya-handle</p>
           <p>text (XXX) XXX-XXXX</p>
         </div>
       </div>
