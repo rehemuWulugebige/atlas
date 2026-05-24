@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 
 export default function MenuPage() {
   return (
-    <main className="bg-bone px-6 py-16 md:px-12 md:py-24">
-      <div className="mx-auto max-w-6xl">
+    <main className="px-6 pt-28 pb-16 md:px-12 md:pt-32 md:pb-24">
+      <div className="mx-auto max-w-7xl">
         <header className="mb-12 md:mb-16">
-          <h1 className="font-display text-dark-walnut text-4xl leading-tight font-light tracking-tight md:text-5xl lg:text-6xl">
+          <h1 className="font-display text-dark-walnut text-4xl leading-tight font-normal tracking-tight md:text-5xl lg:text-6xl">
             The menu
           </h1>
           <p className="font-body text-walnut mt-4 text-lg italic">
@@ -21,7 +21,7 @@ export default function MenuPage() {
           </p>
         </header>
 
-        <ul className="grid list-none grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid list-none grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-12 xl:grid-cols-3">
           {menuItems.map((item) => (
             <li key={item.id}>
               <MenuCard item={item} />

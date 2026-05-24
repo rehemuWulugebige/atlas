@@ -11,7 +11,7 @@ export const menuItems: MenuItem[] = [
     allergens: ["wheat", "dairy", "tree nuts (walnut)"],
     price: "$14",
     unit: "per box",
-    photoUrl: null,
+    photoUrl: "/images/menu/IMG_0935.jpg",
   },
   {
     id: "honey-baklava",
@@ -23,7 +23,7 @@ export const menuItems: MenuItem[] = [
     allergens: ["wheat", "dairy", "tree nuts (walnut)"],
     price: "$18",
     unit: "per tray",
-    photoUrl: null,
+    photoUrl: "/images/menu/IMG_0923.jpg",
   },
   {
     id: "sangza",
@@ -35,7 +35,7 @@ export const menuItems: MenuItem[] = [
     allergens: ["wheat", "eggs", "dairy"],
     price: "$10",
     unit: "per dozen",
-    photoUrl: null,
+    photoUrl: "/images/menu/IMG_2081.jpg",
   },
   {
     id: "rose-water-cake",
@@ -47,7 +47,7 @@ export const menuItems: MenuItem[] = [
     allergens: ["wheat", "dairy", "eggs", "tree nuts (pistachio)"],
     price: "$22",
     unit: "per whole cake",
-    photoUrl: null,
+    photoUrl: "/images/menu/IMG_2456.jpg",
   },
   {
     id: "walnut-girde",
@@ -59,7 +59,7 @@ export const menuItems: MenuItem[] = [
     allergens: ["wheat", "dairy", "eggs", "tree nuts (walnut)", "sesame"],
     price: "$8",
     unit: "per four",
-    photoUrl: null,
+    photoUrl: "/images/menu/IMG_0926.jpg",
   },
   {
     id: "sesame-brittle",
@@ -71,6 +71,66 @@ export const menuItems: MenuItem[] = [
     allergens: ["dairy", "sesame"],
     price: "$9",
     unit: "per box",
-    photoUrl: null,
+    photoUrl: "/images/menu/IMG_8343.jpg",
+  },
+  {
+    id: "weekly-special-1",
+    name: "Weekly special I",
+    tagline: "placeholder — details coming soon",
+    description:
+      "A rotating bake from this week's kitchen. Name, ingredients, and price will be updated before launch.",
+    ingredients: "To be confirmed",
+    allergens: ["to be confirmed"],
+    price: "$12",
+    unit: "per order",
+    photoUrl: "/images/menu/IMG_0973.jpg",
+  },
+  {
+    id: "weekly-special-2",
+    name: "Weekly special II",
+    tagline: "placeholder — details coming soon",
+    description:
+      "Another item from this week's batch. We'll finalize the description and allergens with the baker soon.",
+    ingredients: "To be confirmed",
+    allergens: ["to be confirmed"],
+    price: "$12",
+    unit: "per order",
+    photoUrl: "/images/menu/IMG_2048.jpg",
+  },
+  {
+    id: "weekly-special-3",
+    name: "Weekly special III",
+    tagline: "fresh from the tray",
+    description:
+      "Placeholder listing for a photo-forward item. Copy and pricing will be replaced before the site goes live.",
+    ingredients: "To be confirmed",
+    allergens: ["to be confirmed"],
+    price: "$14",
+    unit: "per order",
+    photoUrl: "/images/menu/IMG_2082.jpg",
+  },
+  {
+    id: "weekly-special-4",
+    name: "Weekly special IV",
+    tagline: "placeholder — details coming soon",
+    description:
+      "Temporary menu entry so we can show the full set of photos. Real name and story to follow.",
+    ingredients: "To be confirmed",
+    allergens: ["to be confirmed"],
+    price: "$10",
+    unit: "per order",
+    photoUrl: "/images/menu/IMG_2445.jpg",
+  },
+  {
+    id: "weekly-special-5",
+    name: "Weekly special V",
+    tagline: "placeholder — details coming soon",
+    description:
+      "Temporary menu entry for an additional bake. Ingredients and allergen info will be confirmed before launch.",
+    ingredients: "To be confirmed",
+    allergens: ["to be confirmed"],
+    price: "$11",
+    unit: "per order",
+    photoUrl: "/images/menu/IMG_2451-copy.jpg",
   },
 ];
