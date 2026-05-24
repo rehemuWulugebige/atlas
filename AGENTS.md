@@ -1,10 +1,10 @@
-# Atlas — Project Context
+# Darya — Project Context
 
 ## What this is
 
-A marketing website for a home-based Uyghur dessert business in Fairfax, Virginia. Single home baker; brand built around her heritage and handmade approach. Operates under Virginia cottage food law (§ 3.2-5130), which means **pickup only — no e-commerce, no online checkout, no delivery, no online ordering**. Orders happen out-of-band via Instagram DM or text. The website is a brochure that showcases the product and routes interested customers to messaging.
+**Darya** is the customer-facing brand for a home-based Uyghur dessert business in Fairfax, Virginia. Single home baker; brand built around her heritage and handmade approach. Operates under Virginia cottage food law (§ 3.2-5130), which means **pickup only — no e-commerce, no online checkout, no delivery, no online ordering**. Orders happen out-of-band via Instagram DM or text. The website is a brochure that showcases the product and routes interested customers to messaging.
 
-The project name "atlas" comes from the traditional Uyghur **etles** textile. Etles motifs (particularly the bodom/almond shape) are used as restrained ornamental accents — favicon, section dividers, the small ornament between hero and story. Never as background patterns or wallpaper.
+The Git repository is still named `atlas` (a nod to the Uyghur **etles** textile). Etles motifs (particularly the bodom/almond shape) are used as restrained ornamental accents — favicon, section dividers, the small ornament between hero and story. Never as background patterns or wallpaper.
 
 ## Tech stack (locked)
 
@@ -83,7 +83,7 @@ Don't pre-create empty folders. Co-locate code with its feature until something 
 
 ## 3D element handling
 
-The Atlas homepage features a signature rotating walnut as the hero centerpiece. Implementation rules:
+The Darya homepage may feature a signature rotating walnut as the hero centerpiece (Phase 1B / optional). Implementation rules:
 
 - Built and exported from Spline (`spline.design`); embedded via the `@splinetool/react-spline` package
 - The Spline canvas is a Client Component (requires browser APIs); load with `next/dynamic` and `ssr: false` to keep surrounding code Server Components
@@ -94,20 +94,20 @@ The Atlas homepage features a signature rotating walnut as the hero centerpiece.
 
 **Color tokens** (defined in `globals.css` via `@theme`):
 
-- `--color-bone: #F7F2E8` (primary background — clean warm white, lets food breathe)
+- `--color-bone: #F7F2E8` (primary background — warm cream, lets food breathe)
 - `--color-cream: #EDE4D1` (secondary surfaces, cards, dividers)
 - `--color-walnut: #6B5947` (body text, secondary headings, soft contrast)
 - `--color-dark-walnut: #3D2D1F` (display headings, primary text, max contrast)
-- `--color-honey: #C9924A` (primary accent — buttons, links, etles motif)
+- `--color-honey: #C9924A` (primary accent — warm honey gold; buttons, links, etles motif)
 - `--color-terracotta: #9D5538` (rare accent — special moments only, not a workhorse)
 
 **Typography**:
 
-- Display: Fraunces (via `next/font`) — italic for emphasis
+- Display: Newsreader (via `next/font`)
 - Body: Manrope (via `next/font`)
 - Do not use Inter, Roboto, or other generic AI-default sans fonts
 
-**Shadows**: warm-tinted only, never pure black. Derive from `--color-brown` at low opacity (~8%). Prefer layered shadows over single shadows.
+**Shadows**: warm-tinted only, never pure black. Derive from `--color-walnut` at low opacity (~8%). Prefer layered shadows over single shadows.
 
 **Photography**:
 
